@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c2c30623-b8b9-42fd-a4db-35db3926dbd3}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8dfa2a59-a461-4fa9-99c6-704c8750ca26}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{58e73504-d7ab-4fec-b9d6-c3e82ecc2373}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cipher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClickReporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClickReporterDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClickReporterView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CReport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DetailReport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HostnameResolveThreadParam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LICENCE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MINIMUMPAGES.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NET_CONF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportExecTheadParam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Search.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchReferrer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserAdd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ClickReporter.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cipher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClickReporter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClickReporterDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClickReporterView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CReport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DATESELECT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DetailReport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HostnameResolveThreadParam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LICENCE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MINIMUMPAGES.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NET_CONF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportExecTheadParam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Search.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchReferrer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserAdd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ClickReporter_ver1.0.0.1\res\ClickReporter.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ClickReporter.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ClickReporter.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\ClickReporter_ver1.0.0.1\res\ClickReporterDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ClickReporterDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ico00001.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\ClickReporter_ver1.0.0.1\res\ico00001.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ico00002.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ico00003.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ico00004.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon3.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon4.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon5.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon6.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon7.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\ClickReporter_ver1.0.0.1\res\idr_acce.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\idr_acce.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\idr_main.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\ClickReporter_ver1.0.0.1\res\idr_main.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\il.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\il21.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\wayin1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
