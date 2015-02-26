@@ -1,0 +1,624 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ClickReporter.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINFRAME           ICON    DISCARDABLE     "res\\ClickReporter.ico"
+IDI_REFERRER            ICON    DISCARDABLE     "res\\idr_main.ico"
+IDI_EMAIL               ICON    DISCARDABLE     "res\\idr_acce.ico"
+IDI_DIRECT              ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_WAYIN               ICON    DISCARDABLE     "res\\icon6.ico"
+IDI_WAYOUT              ICON    DISCARDABLE     "res\\ico00003.ico"
+IDI_MIDDLE              ICON    DISCARDABLE     "res\\ico00004.ico"
+IDI_WAYINOUT            ICON    DISCARDABLE     "res\\ico00002.ico"
+IDI_ROBOT               ICON    DISCARDABLE     "res\\wayin1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  24, 24
+BEGIN
+    BUTTON      ID_REPORT_EXEC
+    BUTTON      ID_NET_CONFIG
+    SEPARATOR
+    BUTTON      ID_VIEW_ALL
+    BUTTON      ID_SEARCH
+    BUTTON      ID_SEARCH_REFERRER
+    BUTTON      ID_SEARCH_MINIMUM_PAGES
+    SEPARATOR
+    BUTTON      ID_RESOLVE_HOSTNAME
+    SEPARATOR
+    BUTTON      ID_STOP_DATA_ANALYZE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "インポート(&I)...\tCtrl+I",   ID_FILE_OPEN
+        MENUITEM "エクスポート(&E)\tCtrl+E",    ID_FILE_SAVE_AS
+        MENUITEM "表示しているデータのみエクスポート", 
+                                                ID_FILE_SAVE_ONLY_SHOWN
+        MENUITEM SEPARATOR
+        MENUITEM "終了(&X)",                    ID_APP_EXIT
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "全訪問者の表示",              ID_VIEW_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "閲覧ページによる訪問者の絞り込み", ID_SEARCH
+        MENUITEM "閲覧ページ数による絞り込み",  ID_SEARCH_MINIMUM_PAGES
+        MENUITEM "リファラ・メールによる訪問者の絞り込み", 
+                                                ID_SEARCH_REFERRER
+        MENUITEM "メールからのアクセスのみ表示", ID_SEARCH_ONLY_MAIL
+        MENUITEM "ロボットを表示しない",        ID_SEARCH_NO_ROBOT
+    END
+    POPUP "レポート(&R)"
+    BEGIN
+        MENUITEM "解析を開始する(&R)\tCtrl+R",  ID_REPORT_EXEC
+        MENUITEM "ホスト名の解決(&H)\tCtrl+H",  ID_RESOLVE_HOSTNAME
+        MENUITEM "停止する(&S)\tCtrl+S",        ID_STOP_DATA_ANALYZE
+        MENUITEM SEPARATOR
+        MENUITEM "設定(&C)\tCtrl+C",            ID_NET_CONFIG
+    END
+    POPUP "ﾍﾙﾌﾟ(&H)"
+    BEGIN
+        MENUITEM "ライセンス情報(&L)\tCtrl+L",  ID_LICENCE_INFO
+        MENUITEM "アクセス追跡隊のﾊﾞｰｼﾞｮﾝ情報(&V)\tCtrl+V", ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_DETAIL MENU DISCARDABLE 
+BEGIN
+    POPUP "編集"
+    BEGIN
+        MENUITEM "ページをブラウザで表示する",  ID_VIEW_PAGE
+        MENUITEM """日時　アクセスページ""の順でコピー", 
+                                                ID_DETAIL_COPY_AS_IT_IS
+        MENUITEM """アクセスページ　日時""の順でコピー", 
+                                                ID_DETAIL_COPY_EXCHANGE_DATE_CLIENT
+
+    END
+END
+
+IDR_MENU_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "詳細メニュー"
+    BEGIN
+        MENUITEM "ページ遷移の表示",            ID_SHOW_DETAIL
+        MENUITEM "リファラのページをブラウザーで表示", ID_VIEW_REFERRERPAGE
+    END
+END
+
+IDR_MENU_MAIN2 MENU DISCARDABLE 
+BEGIN
+    POPUP "詳細メニュー"
+    BEGIN
+        MENUITEM "ページ遷移の表示",            ID_SHOW_DETAIL
+        MENUITEM "リファラのページをブラウザーで表示", ID_VIEW_REFERRERPAGE
+        , GRAYED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_NET_CONFIG,          VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_RESOLVE_HOSTNAME,    VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_LICENCE_INFO,        VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_REPORT_EXEC,         VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_STOP_DATA_ANALYZE,   VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_APP_ABOUT,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "アクセス追跡隊ﾊﾞｰｼﾞｮﾝ情報"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    ICON            IDI_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "アクセス追跡隊 バージョン 2.0.1",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006    Interlog Co., Ltd",IDC_STATIC,40,
+                    25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CLICKREPORTER_FORM DIALOG DISCARDABLE  0, 0, 380, 281
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "List1",IDC_USER_LIST,"SysListView32",LVS_REPORT | 
+                    WS_TABSTOP,117,0,262,175
+    CONTROL         "MonthCalendar1",IDC_MONTHCALENDAR_FROM,"SysMonthCal32",
+                    MCS_NOTODAY | WS_TABSTOP | 0x8,4,16,93,85
+    CONTROL         "MonthCalendar1",IDC_MONTHCALENDAR_TO,"SysMonthCal32",
+                    MCS_NOTODAY | WS_TABSTOP | 0x8,4,118,93,85
+    PUSHBUTTON      "日付範囲の適用",IDC_SET_DATE,17,209,65,17
+    LTEXT           "表示開始日付",IDC_STATIC,4,6,42,8
+    LTEXT           "表示終了日付",IDC_STATIC,4,108,42,8
+    LTEXT           "表示可能範囲：",IDC_STATIC,2,243,46,8
+    CTEXT           "",IDC_DATERANGE,15,253,71,18,SS_SUNKEN
+END
+
+IDD_NET_CONF DIALOG DISCARDABLE  0, 0, 251, 302
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "レポート設定"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,130,281,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,65,281,50,14
+    EDITTEXT        IDC_URL,73,76,164,15,ES_AUTOHSCROLL
+    LTEXT           "ログファイルのURL",IDC_STATIC,13,79,57,16
+    EDITTEXT        IDC_USERID,93,125,100,15,ES_AUTOHSCROLL
+    LTEXT           "ユーザ名",IDC_STATIC,52,128,28,8
+    EDITTEXT        IDC_PASWD,93,149,100,15,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "パスワード",IDC_STATIC,50,151,32,8
+    GROUPBOX        "Basic認証",IDC_STATIC,33,107,178,65,BS_CENTER | BS_FLAT
+    GROUPBOX        "ログ設定",IDC_STATIC,6,10,238,168
+    LTEXT           "ログファイルの場所",IDC_STATIC,13,26,57,16
+    LTEXT           "（例　http://www.xxxx.xx/click/log/access_log)",
+                    IDC_STATIC,98,94,137,10
+    EDITTEXT        IDC_PATH,73,44,135,15,ES_AUTOHSCROLL
+    LTEXT           "ログファイルのパス",IDC_STATIC,13,48,56,16
+    PUSHBUTTON      "参照",IDC_FILE_PATH,213,44,24,16
+    LTEXT           "（例　C:\\xxxx\\xxxx\\access_log)",IDC_STATIC,112,62,94,
+                    10
+    GROUPBOX        "レポート設定",IDC_STATIC,6,192,238,82
+    LTEXT           "セッションタイムアウト",IDC_STATIC,15,229,65,16
+    EDITTEXT        IDC_SESSION_TIMEOUT,86,225,53,15,ES_AUTOHSCROLL
+    LTEXT           "秒",IDC_STATIC,146,230,8,8
+    CONTROL         "ローカル",IDC_LOGPLACE0,"Button",BS_AUTORADIOBUTTON,90,
+                    25,41,10
+    CONTROL         "リモート",IDC_LOGPLACE1,"Button",BS_AUTORADIOBUTTON,140,
+                    25,39,10
+    LTEXT           "ウェッブサイトURL",IDC_STATIC,15,208,65,16
+    EDITTEXT        IDC_WEB_URL,86,205,145,15,ES_AUTOHSCROLL
+    LTEXT           "トップページ",IDC_STATIC,15,249,65,16
+    EDITTEXT        IDC_TOP_PAGE,86,245,117,15,ES_AUTOHSCROLL
+    LTEXT           "（例　index.html)",IDC_STATIC,152,264,50,10
+END
+
+IDD_DETAIL DIALOG DISCARDABLE  0, 0, 347, 147
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ページ遷移"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "List1",IDC_DETAIL,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,333,133
+END
+
+IDD_USER_ADD DIALOG DISCARDABLE  0, 0, 275, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新規にユーザを追加"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "追加",IDOK,218,7,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,218,24,50,14
+    EDITTEXT        IDC_MAIL_ADDRESS,63,7,128,14,ES_AUTOHSCROLL
+    LTEXT           "Mailアドレス",IDC_STATIC,17,10,36,8
+    EDITTEXT        IDC_NAME,63,26,128,14,ES_AUTOHSCROLL
+    LTEXT           "名前",IDC_STATIC,17,28,15,8
+    EDITTEXT        IDC_COMPANY,63,46,128,14,ES_AUTOHSCROLL
+    LTEXT           "会社名",IDC_STATIC,17,49,22,8
+    EDITTEXT        IDC_ITEM1,63,66,128,14,ES_AUTOHSCROLL
+    LTEXT           "アイテム１",IDC_STATIC,17,69,31,8
+    EDITTEXT        IDC_ITEM2,63,86,128,14,ES_AUTOHSCROLL
+    LTEXT           "アイテム２",IDC_STATIC,17,88,31,8
+END
+
+IDD_LICENCE_INFO DIALOG DISCARDABLE  0, 0, 265, 149
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "アクセス追跡隊ライセンス"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "ユーザ名",IDC_STATIC,17,22,28,8
+    LTEXT           "E-Mailアドレス",IDC_STATIC,11,38,43,8
+    LTEXT           "有効期限",IDC_STATIC,18,55,28,8
+    GROUPBOX        "ライセンス情報",IDC_STATIC,7,7,251,66
+    GROUPBOX        "ライセンス登録",IDC_STATIC,7,92,251,50
+    EDITTEXT        IDC_KEY,17,110,185,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "閉じる",IDC_CLOSE,213,33,37,18
+    PUSHBUTTON      "登録",IDC_LICENCE_REGISTER,213,109,37,18
+    LTEXT           "",IDC_USERNAME,83,20,120,12
+    LTEXT           "",IDC_EMAIL,83,36,120,12
+    LTEXT           "",IDC_EXPIRE,83,53,120,12
+END
+
+IDD_SEARCH DIALOG DISCARDABLE  0, 0, 215, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "閲覧ページによる訪問者の絞り込み"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "絞り込み",IDOK,103,122,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,50,122,50,14
+    EDITTEXT        IDC_SEARCH_WAYIN,97,8,109,16,ES_AUTOHSCROLL
+    LTEXT           "入口ページの指定",IDC_STATIC,16,12,55,8
+    LTEXT           "出口ページの指定",IDC_STATIC,16,33,55,8
+    EDITTEXT        IDC_SEARCH_WAYOUT,97,30,109,16,ES_AUTOHSCROLL
+    LTEXT           "閲覧ページの指定１",IDC_STATIC,16,55,59,8
+    EDITTEXT        IDC_SEARCH_PAGE1,97,51,109,16,ES_AUTOHSCROLL
+    LTEXT           "閲覧ページの指定２",IDC_STATIC,16,77,59,8
+    EDITTEXT        IDC_SEARCH_PAGE2,97,73,109,16,ES_AUTOHSCROLL
+    LTEXT           "リファラ",IDC_STATIC,16,99,23,8
+    EDITTEXT        IDC_SEARCH_REFERRER,97,95,109,16,ES_AUTOHSCROLL
+END
+
+IDD_MINIMUM_PAGES DIALOG DISCARDABLE  0, 0, 215, 45
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "閲覧ページ数による絞り込み"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "絞り込み",IDOK,158,7,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,158,24,50,14
+    EDITTEXT        IDC_MINIMU_PAGES,67,15,53,14,ES_AUTOHSCROLL
+    LTEXT           "ページ",IDC_STATIC,125,18,20,8
+    LTEXT           "最小閲覧ページ数",IDC_STATIC,8,17,55,8
+END
+
+IDD_SEARCH_REFERRER DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "リファラ・メールによる訪問者の絞り込み"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "絞り込み",IDOK,111,34,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,58,34,50,14
+    EDITTEXT        IDC_SEARCH_REFERRER,109,7,119,16,ES_AUTOHSCROLL
+    LTEXT           "リファラまたはメールアドレス",-1,16,12,84,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,1,0
+ PRODUCTVERSION 2,0,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Interlog Co., Ltd\0"
+            VALUE "FileDescription", "ClickReporter MFC ｱﾌﾟﾘｹｰｼｮﾝ\0"
+            VALUE "FileVersion", "2, 0, 1, 0\0"
+            VALUE "InternalName", "AccessTracer\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "AccessTracer.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "AccessTracer ｱﾌﾟﾘｹｰｼｮﾝ\0"
+            VALUE "ProductVersion", "2, 0, 1, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_NET_CONF, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 295
+    END
+
+    IDD_DETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_USER_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_LICENCE_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_MINIMUM_PAGES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_SEARCH_REFERRER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "ClickReporter\n\nClickR\n\n\nClickReporter.Document\nClickR Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "アクセス追跡隊 Ver2.0.1"
+    AFX_IDS_IDLEMESSAGE     " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        " "
+    ID_INDICATOR_CAPS       " "
+    ID_INDICATOR_NUM        "         "
+    ID_INDICATOR_SCRL       " "
+    ID_INDICATOR_OVR        " "
+    ID_INDICATOR_REC        " "
+    ID_INDICATOR_KANA       " "
+    ID_INDICATOR_USERNUM    "　　　　　　　　    "
+    ID_INDICATOR_STATUS     "　　　　　　　　　　　　　　　　　　　　　　　　　　　"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             " "
+    ID_FILE_OPEN            " "
+    ID_FILE_CLOSE           " "
+    ID_FILE_SAVE            " "
+    ID_FILE_SAVE_AS         " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            " "
+    ID_APP_EXIT             " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            " "
+    ID_PREV_PANE            " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           " "
+    ID_EDIT_CLEAR_ALL       " "
+    ID_EDIT_COPY            " "
+    ID_EDIT_CUT             " "
+    ID_EDIT_FIND            " "
+    ID_EDIT_PASTE           " "
+    ID_EDIT_REPEAT          " "
+    ID_EDIT_REPLACE         " "
+    ID_EDIT_SELECT_ALL      " "
+    ID_EDIT_UNDO            " "
+    ID_EDIT_REDO            " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          " "
+    AFX_IDS_SCMOVE          " "
+    AFX_IDS_SCMINIMIZE      " "
+    AFX_IDS_SCMAXIMIZE      " "
+    AFX_IDS_SCNEXTWINDOW    " "
+    AFX_IDS_SCPREVWINDOW    " "
+    AFX_IDS_SCCLOSE         " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       " "
+    AFX_IDS_SCTASKLIST      " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NET_CONFIG           "\nレポート設定"
+    ID_REPORT_EXEC          "\n解析を開始する"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SEARCH               "\n閲覧ページによる訪問者の絞り込み"
+    ID_VIEW_ALL             "\n全訪問者の表示"
+    ID_SEARCH_MINIMUM_PAGES "\n閲覧ページ数による絞り込み"
+    ID_SEARCH_REFERRER      "\nリファラによる訪問者の絞り込み"
+    ID_RESOLVE_HOSTNAME     "\nホスト名の解決"
+    ID_STOP_RESOLVE_HOSTNAME "\nホスト名の解決を停止"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DATA_ANALYZE         "\n解析を停止する"
+    ID_STOP_DATA_ANALYZE    "\n解析を停止する"
+    ID_DATE_SELECT          "\n表示期間指定"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\ClickReporter.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
